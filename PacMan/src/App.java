@@ -1,5 +1,7 @@
 import javax.swing.JFrame; 
 
+//every time see pacmanGame it is "game"
+
 public class App {
     public static void main(String[] args) throws Exception {
         int rowCount = 21; 
@@ -21,7 +23,10 @@ public class App {
 
         PacMan game = new PacMan();
         frame.add(game); 
-        frame.pack(); 
+        frame.pack();
+        game.requestFocus();  
         frame.setVisible(true);
+
+        //start game
     }
 }
